@@ -1,11 +1,173 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WhatsApp Order Generator</title>
-</head>
-<body>
-    
-</body>
+    <!-- ============== STYLE CSS ============ -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- ============= REMIX ICONS ==============  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>Daftar Menu</h1>
+    <div class="menu-card-container">
+      <div class="menu-card" data-name="menu-1" data-price="10000">
+        <img src="" alt="" class="menu-img" />
+        <h2 class="menu-name">Nama Menu</h2>
+        <p class="menu-copy">Keterangan Menu</p>
+        <p class="menu-price">Rp10.000</p>
+        <div class="menu-qty">
+          <span class="remove-item">-</span><span class="item-qty">0</span
+          ><span class="add-item">+</span>
+        </div>
+      </div>
+      <div class="menu-card" data-name="menu-1" data-price="10000">
+        <img src="" alt="" class="menu-img" />
+        <h2 class="menu-name">Nama Menu</h2>
+        <p class="menu-copy">Keterangan Menu</p>
+        <p class="menu-price">Rp10.000</p>
+        <div class="menu-qty">
+          <span class="remove-item">-</span><span class="item-qty">0</span
+          ><span class="add-item">+</span>
+        </div>
+      </div>
+      <div class="menu-card" data-name="menu-1" data-price="10000">
+        <img src="" alt="" class="menu-img" />
+        <h2 class="menu-name">Nama Menu</h2>
+        <p class="menu-copy">Keterangan Menu</p>
+        <p class="menu-price">Rp10.000</p>
+        <div class="menu-qty">
+          <span class="remove-item">-</span><span class="item-qty">0</span
+          ><span class="add-item">+</span>
+        </div>
+      </div>
+      <div class="menu-card" data-name="menu-1" data-price="10000">
+        <img src="" alt="" class="menu-img" />
+        <h2 class="menu-name">Nama Menu</h2>
+        <p class="menu-copy">Keterangan Menu</p>
+        <p class="menu-price">Rp10.000</p>
+        <div class="menu-qty">
+          <span class="remove-item">-</span><span class="item-qty">0</span
+          ><span class="add-item">+</span>
+        </div>
+      </div>
+      <div class="menu-card" data-name="menu-1" data-price="10000">
+        <img src="" alt="" class="menu-img" />
+        <h2 class="menu-name">Nama Menu</h2>
+        <p class="menu-copy">Keterangan Menu</p>
+        <p class="menu-price">Rp10.000</p>
+        <div class="menu-qty">
+          <span class="remove-item">-</span><span class="item-qty">0</span
+          ><span class="add-item">+</span>
+        </div>
+      </div>
+      <div class="menu-card" data-name="menu-1" data-price="10000">
+        <img src="" alt="" class="menu-img" />
+        <h2 class="menu-name">Nama Menu</h2>
+        <p class="menu-copy">Keterangan Menu</p>
+        <p class="menu-price">Rp10.000</p>
+        <div class="menu-qty">
+          <span class="remove-item">-</span><span class="item-qty">0</span
+          ><span class="add-item">+</span>
+        </div>
+      </div>
+      <div class="menu-card" data-name="menu-1" data-price="10000">
+        <img src="" alt="" class="menu-img" />
+        <h2 class="menu-name">Nama Menu</h2>
+        <p class="menu-copy">Keterangan Menu</p>
+        <p class="menu-price">Rp10.000</p>
+        <div class="menu-qty">
+          <span class="remove-item">-</span><span class="item-qty">0</span
+          ><span class="add-item">+</span>
+        </div>
+      </div>
+      <div class="menu-card" data-name="menu-1" data-price="10000">
+        <img src="" alt="" class="menu-img" />
+        <h2 class="menu-name">Nama Menu</h2>
+        <p class="menu-copy">Keterangan Menu</p>
+        <p class="menu-price">Rp10.000</p>
+        <div class="menu-qty">
+          <span class="remove-item">-</span><span class="item-qty">0</span
+          ><span class="add-item">+</span>
+        </div>
+      </div>
+      <div class="menu-card" data-name="menu-1" data-price="10000">
+        <img src="" alt="" class="menu-img" />
+        <h2 class="menu-name">Nama Menu</h2>
+        <p class="menu-copy">Keterangan Menu</p>
+        <p class="menu-price">Rp10.000</p>
+        <div class="menu-qty">
+          <span class="remove-item">-</span><span class="item-qty">0</span
+          ><span class="add-item">+</span>
+        </div>
+      </div>
+    </div>
+
+    <h1>Data Pelanggan</h1>
+    <div class="form-container" id="form-container">
+      <form action="/action" id="form-data">
+        <div class="form-row">
+          <div class="form-input-group">
+            <label for="name">Nama:</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Masukkan nama Anda"
+              maxlength="50"
+              required
+            />
+            <i id="name-icon" class="ri-close-large-line error-icon"></i>
+          </div>
+          <div class="error-message" id="name-error"></div>
+        </div>
+        <div class="form-row">
+          <div class="form-input-group">
+            <label for="number">Nomor HP:</label>
+            <input
+              type="number"
+              name="number"
+              id="number"
+              placeholder="0811 1111 1111"
+              required
+            />
+            <i id="name-icon" class="ri-close-large-line error-icon"></i>
+          </div>
+          <div class="error-message" id="number-error"></div>
+        </div>
+        <div class="form-row">
+          <div class="form-input-group">
+            <label for="address">Alamat:</label>
+            <input
+              type="text"
+              name="address"
+              id="address"
+              placeholder="Masukkan alamat tujuan"
+              maxlength="50"
+              required
+            />
+            <i id="name-icon" class="ri-close-large-line error-icon"></i>
+          </div>
+          <div class="error-message" id="address-error"></div>
+        </div>
+        <div class="form-row">
+          <div class="form-input-group">
+            <label for="note">Catatan</label>
+            <textarea
+              name="note"
+              id="note"
+              rows="7"
+              cols="32"
+              placeholder="Catatan"
+              maxlength="500"
+            ></textarea>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
 </html>
