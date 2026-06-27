@@ -129,13 +129,13 @@
           <div class="form-input-group">
             <label for="number">Nomor HP:</label>
             <input
-              type="number"
+              type="tel"
               name="number"
               id="number"
               placeholder="0811 1111 1111"
               required
             />
-            <i id="name-icon" class="ri-close-large-line error-icon"></i>
+            <i id="number-icon" class="ri-close-large-line error-icon"></i>
           </div>
           <div class="error-message" id="number-error"></div>
         </div>
@@ -150,7 +150,15 @@
               maxlength="50"
               required
             />
-            <i id="name-icon" class="ri-close-large-line error-icon"></i>
+            <i id="address-icon" class="ri-close-large-line error-icon"></i>
+          </div>
+          <div class="error-message" id="address-error"></div>
+        </div>
+        <div class="form-row">
+          <div class="form-input-group">
+            <label for="date">Tanggal Pengiriman:</label>
+            <input type="date" name="address" id="date" required />
+            <i id="address-icon" class="ri-close-large-line error-icon"></i>
           </div>
           <div class="error-message" id="address-error"></div>
         </div>
@@ -167,6 +175,7 @@
             ></textarea>
           </div>
         </div>
+        <button type="submit" id="submit-btn">Kirim</button>
       </form>
     </div>
   </body>
