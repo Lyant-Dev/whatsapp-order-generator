@@ -13,4 +13,19 @@
   --text-color: rgb(38, 38, 38);
   --background-color: rgb(247, 241, 222);
   --main-font: "Nunito Sans", sans-serif;
+  --border-radius: 10px;
+}
+body {
+  font-family: var(--main-font);
+  background-color: var(--background-color);
+}
+.menu-card {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.menu-card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
 }
