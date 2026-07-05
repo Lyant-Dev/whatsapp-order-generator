@@ -19,13 +19,42 @@ body {
   font-family: var(--main-font);
   background-color: var(--background-color);
 }
-.menu-card {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
+.menu-img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  transition: all 0.4s;
+}
+.menu-img:hover {
+  transform: translateY(0.5rem);
 }
 .menu-card-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
+}
+.menu-card {
+  background-color: var(--primary-color);
+  border-radius: var(--border-radius);
+  text-align: center;
+}
+.menu-name {
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+  background-color: var(--secondary-color);
+  margin: 0 4rem;
+  border-radius: var(--border-radius);
+}
+.menu-price {
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+  font-weight: 700;
+}
+.menu-qty {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+.menu-qty span {
+    gap: 2rem;
 }
