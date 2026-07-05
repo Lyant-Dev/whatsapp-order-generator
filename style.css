@@ -46,15 +46,23 @@ body {
   border-radius: var(--border-radius);
 }
 .menu-price {
-  margin-top: 0.5rem;
+  margin-top: 1.25rem;
   font-size: 1.5rem;
   padding-bottom: 1rem;
   font-weight: 700;
 }
 .menu-qty {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
   font-size: 1.75rem;
-  margin-bottom: 1rem;
+  align-items: end;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
 }
 .menu-qty span {
-    gap: 2rem;
+  display: inline-block;
+  cursor: pointer;
+  aspect-ratio: 1/1;
 }
