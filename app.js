@@ -3,6 +3,11 @@ const decreaseQty = document.querySelectorAll(".remove-item");
 const displayQty = document.querySelectorAll(".item-qty");
 const menuCard = document.querySelectorAll(".menu-card");
 const submitBtn = document.querySelector("#submit-btn");
+const name = document.querySelector("#name").value;
+const number = document.querySelector("#number").value;
+const address = document.querySelector("#address").value;
+const date = document.querySelector("#date").value;
+const note = document.querySelector("#note").value;
 
 submitBtn.addEventListener("click", (e) => {
   e.preventDefault();
@@ -16,7 +21,7 @@ submitBtn.addEventListener("click", (e) => {
       orderMenu.push({ name, price, qty });
     }
   });
-  console.log(orderMenu);
+  const menuList = orderMenu.map((item) => `-${item.name} x${item.qty}`);
 });
 
 increaseQty.forEach((btn, index) => {
