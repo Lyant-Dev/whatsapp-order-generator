@@ -3,6 +3,7 @@ const decreaseQty = document.querySelectorAll(".remove-item");
 const itemQty = document.querySelectorAll(".item-qty");
 const menuCard = document.querySelectorAll(".menu-card");
 const submitBtn = document.querySelector("#submit-btn");
+const orderList = document.querySelector(".order-list");
 
 submitBtn.addEventListener("click", (e) => {
   e.preventDefault();
@@ -17,7 +18,7 @@ submitBtn.addEventListener("click", (e) => {
     let menuName = card.dataset.name;
     let menuPrice = card.dataset.price;
     let menuQty = card.querySelector(".item-qty").innerText;
-    if (parseInt(qty) > 0) {
+    if (parseInt(menuQty) > 0) {
       orderMenu.push({ menuName, menuPrice, menuQty });
     }
   });
@@ -36,3 +37,20 @@ decreaseQty.forEach((btn, index) => {
     }
   });
 });
+
+function renderSummary() {
+  const summary = [];
+  menuCard.forEach((card) => {
+    let menuName = card.dataset.name;
+    let menuPrice = card.dataset.price;
+    let menuQty = card.querySelector(".item-qty").innerText;
+    if (parseInt(menuQty) > 0) {
+      summary.push({ menuName, menuPrice, menuQty });
+    }
+  });
+  orderList.innerHTML = summary
+    .map((item) => {
+      return `<li>${item.menuName} x${item.menuQty}</li>`;
+    })
+    .join("");
+}
