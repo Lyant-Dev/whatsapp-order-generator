@@ -76,7 +76,6 @@ h1 {
   display: flex;
   flex-direction: column;
   padding: 1.1rem;
-
   max-width: 1000px;
   border: 0px solid black;
   border-radius: var(--border-radius);
@@ -118,7 +117,6 @@ h1 {
   border: 0px solid black;
   border-radius: var(--border-radius);
   background-color: rgb(247, 245, 239);
-  margin: 1.25rem;
   gap: 2rem;
   margin: 0 auto;
   padding: 1.5rem;
@@ -210,4 +208,31 @@ h1 {
   font-size: 1.75rem;
   border: none;
   border-radius: var(--border-radius);
+}
+
+.order-summary {
+  border: 0px solid black;
+  border-radius: var(--border-radius);
+  background-color: rgb(247, 245, 239);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+.order-list {
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0.5rem 0;
+  line-height: 2.5rem;
+}
+#total-price {
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0.5rem 0;
+  line-height: 2.5rem;
+  color: rgb(0, 203, 0);
 }
