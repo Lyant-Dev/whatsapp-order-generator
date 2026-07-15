@@ -23,6 +23,26 @@ submitBtn.addEventListener("click", (e) => {
       orderMenu.push({ menuName, menuPrice, menuQty });
     }
   });
+  const menuList = orderMenu
+    .map((item) => `-${item.menuName} x${item.menuQty}`)
+    .join("\n");
+  const accPrice = orderMenu.reduce((acc, item) => {
+    return acc + parseInt(item.menuPrice) * parseInt(item.menuQty);
+  }, 0);
+  const message = `Halo kak, Saya ingin memesan: 
+${menuList}
+
+TOTAL: Rp${accPrice.toLocaleString("id-ID")}
+
+DATA PELANGGAN:
+Nama: ${name}
+Nomor HP: ${number}
+Alamat: ${address}
+Date: ${date}
+Note: ${note}`;
+
+  const waNumber = "628138093473";
+  window.open(`https://wa.me/${waNumber}?text=${encodeURIComponent(message)}`);
 });
 
 increaseQty.forEach((btn, index) => {
@@ -59,5 +79,5 @@ function renderSummary() {
       return `<li>${item.menuName} x${item.menuQty} Rp${item.menuPrice.toLocaleString("id-ID")}</li> `;
     })
     .join("");
-    totalPrice.innerHTML = `Total = Rp${accPrice.toLocaleString("id-ID")}`
+  totalPrice.innerHTML = `Total = Rp${accPrice.toLocaleString("id-ID")}`;
 }

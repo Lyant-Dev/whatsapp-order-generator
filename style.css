@@ -213,20 +213,32 @@ h1 {
 .order-summary {
   border: 0px solid black;
   border-radius: var(--border-radius);
-  background-color: rgb(247, 245, 239);
+  background-color: rgba(235, 212, 82, 0.808);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
-  margin: 1rem 0;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+
+  width: 60%;
 }
 .order-list {
   font-family: sans-serif;
+  background-color: rgb(247, 245, 239);
+  border-radius: var(--border-radius);
+  width: 80%;
+  padding: 2rem;
   font-size: 1.5rem;
   font-weight: 500;
   margin: 0.5rem 0;
   line-height: 2.5rem;
+  list-style: none;
+}
+.order-list li {
+  padding-bottom: 1rem;
+  border-bottom: 0.5px solid rgb(190, 187, 187);
 }
 #total-price {
   font-family: sans-serif;
@@ -235,4 +247,7 @@ h1 {
   margin: 0.5rem 0;
   line-height: 2.5rem;
   color: rgb(0, 203, 0);
+  background-color: rgb(247, 245, 239);
+  border-radius: var(--border-radius);
+  padding: 0.5rem;
 }
