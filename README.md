@@ -2,7 +2,7 @@
 
 A vanilla JavaScript WhatsApp Order Generator — built from scratch, no tutorials. Part of a 6-project frontend portfolio roadmap focused on learning by building.
 
-🔗 Live Demo: [coming soon]
+🔗 Live Demo: https://wa-order-generator.netlify.app/
 
 ---
 
