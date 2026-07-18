@@ -254,7 +254,10 @@ h1 {
 
 /* BREAKPOINTS  */
 /* FOR MOBILE DEVICES */
-@media screen and (max-width: 362px) {
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
   h1 {
     font-size: 1.5rem;
     text-align: center;
@@ -262,7 +265,8 @@ h1 {
   .menu-card-container {
     display: grid;
     grid-template-columns: 1fr;
-    width: 100%;
+    gap: 1rem;
+    width: 95%;
   }
   .menu-img {
     width: 40%;
@@ -274,8 +278,6 @@ h1 {
     font-size: 1.2rem;
   }
   .menu-card {
-    width: 180px;
-    margin: 0 1rem;
     height: auto;
   }
   .remove-item,
@@ -302,7 +304,7 @@ h1 {
     cursor: pointer;
   }
   .order-summary {
-    width: 50%;
+    width: 90%;
     margin: 1rem;
     padding: 0.5rem;
     row-gap: 0.5rem;
@@ -312,18 +314,17 @@ h1 {
     margin: 0.5rem;
   }
   .form-container {
-    width: 65%;
-    margin: .5rem;
+    width: 90%;
+    margin: 0 auto;
     padding: 0.5rem;
   }
   .form-row input {
     font-size: 1.2rem;
-    width: 0;
+    width: 100%;
   }
   .form-input-group {
-    font-size: 1.2rem; 
+    font-size: 1.2rem;
   }
-  
 }
 
 /* FOR TABLET DEVICES */
