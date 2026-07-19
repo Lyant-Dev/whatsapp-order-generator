@@ -293,20 +293,18 @@ h1 {
   }
   .form-row label {
     font-size: 1.2rem;
-    width: 100px;
+    min-width: 120px;
   }
   .form-input-group {
-    font-size: 1.2rem;
+    gap: 0;
   }
   #submit-btn {
     width: auto;
-    padding: 0.5rem;
+    padding: .5rem 1rem;
+    transition: transform 0.05s;
   }
+   #submit-btn:active  {
+    transform: scale(0.9);
+   }
 }
 
-/* FOR TABLET DEVICES */
-@media screen and (max-width: 768px) {
-}
-/* FOR MOBILE DEVICES */
-@media screen and (max-width: 1024px) {
-}
