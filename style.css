@@ -163,38 +163,7 @@ h1 {
 .form-row textarea {
   resize: none;
 }
-#success-message {
-  display: none;
-  font-size: 1rem;
-  font-weight: lighter;
-  margin: 2rem 0;
-  text-align: center;
-}
-@keyframes shake {
-  0%,
-  100% {
-    transform: translateX(0);
-  }
-  25% {
-    transform: translateX(-5px);
-  }
-  75% {
-    transform: translateX(5px);
-  }
-}
 
-.shake {
-  animation: shake 0.3s ease;
-}
-.error-icon {
-  color: red;
-  font-size: 1.5rem;
-  font-weight: 700;
-  display: none;
-}
-.error-icon.active {
-  display: inline;
-}
 .button-container {
   text-align: center;
   margin: 1rem 0;
@@ -319,11 +288,19 @@ h1 {
     padding: 0.5rem;
   }
   .form-row input {
-    font-size: 1.2rem;
+    font-size: 1rem;
     width: 100%;
+  }
+  .form-row label {
+    font-size: 1.2rem;
+    width: 100px;
   }
   .form-input-group {
     font-size: 1.2rem;
+  }
+  #submit-btn {
+    width: auto;
+    padding: 0.5rem;
   }
 }
 
